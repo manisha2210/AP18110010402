@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:text="0"
+        android:textSize="100sp"
+        android:gravity="center"
+        android:background="#CDDC39"
+        android:textColor="#3F51B5"
+        android:id="@+id/counttext"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        >
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="wrap_content"
+            android:text="+"
+            android:textSize="33dp"
+            android:layout_weight="1"
+            android:layout_height="64dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+
+            android:background="@color/colorAccent"
+            />
+        <Button
+            android:id="@+id/decrease"
+            android:layout_width="wrap_content"
+            android:text="-"
+            android:textSize="33dp"
+            android:layout_weight="1"
+            android:layout_height="64dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimary"
+            />
+        <Button
+            android:id="@+id/resetting"
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:textSize="33dp"
+            android:layout_weight="1"
+            android:layout_height="64dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+
+            android:background="@color/colorAccent"
+            />
+        <Button
+            android:id="@+id/mess"
+            android:onClick="display"
+            android:layout_width="wrap_content"
+            android:text="Toast"
+            android:textSize="33dp"
+            android:layout_weight="1"
+            android:layout_height="64dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
